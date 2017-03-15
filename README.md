@@ -2,7 +2,7 @@
 
 Retrieve currency exchange rate using several web services.
 
-## Available webservicess:
+## Available webservices:
 
 1. WebserviceX.NET Data Protocol is a SOAP-inspired technology for reading, writing, and modifying information on the web.
 2. Fixer.io is a free JSON API for current and historical foreign exchange rates published by the European Central Bank. 
@@ -26,7 +26,7 @@ $rate = new ExchangeRates();
 $value = $rate->getRate('USD', 'EUR');
 ```
 
-Get specific exchange rate from fixer.io (by default)
+Get specific exchange rate from fixer.io
 
 ```php
 use IPaulK\ExchangeRates\ExchangeRates as ExchangeRates;
