@@ -17,6 +17,6 @@ use IPaulK\ExchangeRates\ExchangeRates as ExchangeRates;
 
 $rate = new ExchangeRates();
 
-/** @var array $value */
+/** @var array $data */
 $data = $rate->fetchRates('USD', array('EUR', 'GBP', 'JPY', 'RUB', 'ILS', 'AUD'));
 ```
