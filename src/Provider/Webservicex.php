@@ -34,7 +34,7 @@ class Webservicex implements ProviderInterface
                 return (float) $res;
             }
         } catch (\Exception $e) {
-            if( $retry == 0 ) {
+            if ($retry == 0) {
                 $this->conversion($currencyFrom, $currencyTo, 1);
             }
         }
@@ -58,12 +58,12 @@ class Webservicex implements ProviderInterface
      * Retrieve rates
      *
      * @param string $baseCurrencyCode
-     * @param array $currencyCodes
-     * @return array
+     * @param [] $currencyCodes
+     * @return []
      */
     public function fetchRates($baseCurrencyCode, $currencyCodes)
     {
-        $data = array();
+        $data = [];
 
         @set_time_limit(0);
         foreach ($currencyCodes as $currencyTo) {

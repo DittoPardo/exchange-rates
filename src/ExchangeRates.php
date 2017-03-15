@@ -60,8 +60,8 @@ class ExchangeRates
      * Retrieve rates
      *
      * @param string $baseCurrencyCode
-     * @param array $currencyCodes
-     * @return array
+     * @param [] $currencyCodes
+     * @return []
      */
     public function fetchRates($baseCurrencyCode, $currencyCodes)
     {
