@@ -1,0 +1,24 @@
+{
+    "name": "ipaulk/exchange-rates",
+    "type": "library",
+    "description": "Retrieve currency exchange rate using several web services.",
+    "keywords": ["php", "currency", "exchange rate", "webservicex", "finance"],
+    "homepage": "https://github.com/iPaulK/exchange-rates/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul K",
+            "email": "ipaulk@gmail.com",
+            "homepage": "https://github.com/iPaulK/"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "IPaulK\\ExchangeRates\\": "src/"
+        }
+    }
+}
