@@ -68,8 +68,8 @@ class Fixerio implements ProviderInterface
      */
     public function fetchRates($baseCurrencyCode, $currencyCodes)
     {
-    	$data = $this->conversion($baseCurrencyCode, $currencyCodes);
-        $result[$baseCurrencyCode][] = $data['rates'];
-    	return $result;
+        $data = $this->conversion($baseCurrencyCode, $currencyCodes);
+        $result[$baseCurrencyCode] = $data['rates'];
+        return $result;
     }
 }
