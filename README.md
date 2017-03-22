@@ -26,12 +26,12 @@ $exchangeRates = new ExchangeRates();
 $value = $exchangeRates->getRate('USD', 'EUR');
 ```
 
-Get specific exchange rate from fixer.io (by default)
+Get specific exchange rate from fixer.io
 
 ```php
 use IPaulK\ExchangeRates\ExchangeRates as ExchangeRates;
 
-$exchangeRates = new ExchangeRates('fixerio');
+$exchangeRates = new ExchangeRates();
 $exchangeRates->setProvider('fixerio');
 
 /** @var float $value */
